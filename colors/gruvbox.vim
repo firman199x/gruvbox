@@ -487,7 +487,7 @@ if version >= 700
   hi! link TabLine TabLineFill
 
   " Match paired bracket under the cursor
-  call s:HL('MatchParen', s:none, s:bg3, s:bold)
+  call s:HL('MatchParen', ['#ffffff', 15], ['#d70000', 160], s:bold)
 endif
 
 if version >= 703
@@ -651,14 +651,14 @@ endif
 " }}}
 " Diffs: {{{
 
-call s:HL('DiffDelete', s:red, s:bg0, s:inverse)
-call s:HL('DiffAdd',    s:green, s:bg0, s:inverse)
+call s:HL('DiffDelete', ['#5f0000', 52], ['#5f0000', 52], '')
+call s:HL('DiffAdd',    s:none, ['#00005f', 17], '')
 "call s:HL('DiffChange', s:bg0, s:blue)
 "call s:HL('DiffText',   s:bg0, s:yellow)
 
 " Alternative setting
-call s:HL('DiffChange', s:aqua, s:bg0, s:inverse)
-call s:HL('DiffText',   s:yellow, s:bg0, s:inverse)
+call s:HL('DiffChange', s:none, ['#00005f', 17], '')
+call s:HL('DiffText',   s:none, ['#005f00', 22], '')
 
 " }}}
 " Spelling: {{{

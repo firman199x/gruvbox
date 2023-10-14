@@ -342,7 +342,7 @@ endif
 
 let s:invert_selection = s:inverse
 if exists('g:gruvbox_invert_selection')
-  if g:gruvbox_invert_selection == 0
+  if g:gruvbox_invert_selection == 1
     let s:invert_selection = ''
   endif
 endif
@@ -504,7 +504,7 @@ endif
 hi! link NonText GruvboxBg2
 hi! link SpecialKey GruvboxBg2
 
-call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
+call s:HL('Visual',    s:none,  ['#00005f', 237])
 hi! link VisualNOS Visual
 
 call s:HL('Search',    s:yellow, s:bg0, s:inverse)

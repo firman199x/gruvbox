@@ -487,7 +487,7 @@ if version >= 700
   hi! link TabLine TabLineFill
 
   " Match paired bracket under the cursor
-  call s:HL('MatchParen', ['#ffffff', 15], ['#d70000', 160], s:bold)
+  call s:HL('MatchParen', ['#d70000', 160], ['#ffffff', 15], s:bold)
 endif
 
 if version >= 703
@@ -548,7 +548,7 @@ call s:HL('LineNr', s:bg4, s:number_column)
 call s:HL('SignColumn', s:none, s:sign_column)
 
 " Line used for closed folds
-call s:HL('Folded', s:gray, s:bg1, s:italic)
+call s:HL('Folded', ['#000000', 237], ['#121212', 234], s:italic)
 " Column where folds are displayed
 call s:HL('FoldColumn', s:gray, s:bg1)
 

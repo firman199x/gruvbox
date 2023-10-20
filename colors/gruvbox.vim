@@ -487,7 +487,7 @@ if version >= 700
   hi! link TabLine TabLineFill
 
   " Match paired bracket under the cursor
-  call s:HL('MatchParen', ['#d70000', 160], ['#ffffff', 15], s:bold)
+  call s:HL('MatchParen', ['#d70000', 55], ['005fd7', 26], s:bold)
 endif
 
 if version >= 703
@@ -504,7 +504,7 @@ endif
 hi! link NonText GruvboxBg2
 hi! link SpecialKey GruvboxBg2
 
-call s:HL('Visual',    s:none,  ['#00005f', 237])
+call s:HL('Visual',    s:none,  ['005fd7', 26])
 hi! link VisualNOS Visual
 
 call s:HL('Search',    s:yellow, s:bg0, s:inverse)
